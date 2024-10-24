@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <head>
   <title>Mirror</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <video id="mirror" muted autoplay></video>
-  <script type="text/javascript">
-    const video = document.querySelector('#myVidPlayer');
-    
-    window.navigator.mediaDevices.getUserMedia({ video: true });
-    .then(stream => {
-      video.srcObject = stream;
-      video.onloadedmetadata = (e) => {
-        video.play();
-      };
-    });
-    .catch( () => {
-      alert('Please give miro.boats/mirror permission to use the camera');
-    });
-  </script>
+  <video id="mirror" autoplay="true"></video>
+  <script src="script.js"></script>
 </body>
