@@ -5,10 +5,8 @@
 <body>
   <video id="mirror" controls muted autoplay></video>
   <script type="text/javascript">
-    //Selector for your <video> element
     const video = document.querySelector('#myVidPlayer');
-
-    //Core
+    
     window.navigator.mediaDevices.getUserMedia({ video: true });
     .then(stream => {
       video.srcObject = stream;
