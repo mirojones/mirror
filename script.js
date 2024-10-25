@@ -6,8 +6,9 @@ if (navigator.mediaDevices.getUserMedia) {
       mirror.srcObject = stream;
     })
     .catch (function (error) {
-      console.log("Something went wrong");
+      alert("Please allow access to camera.");
     })
 } else {
-  alert("Sorry, Mirror isn't supported by your browser");
+  alert("Sorry, Mirror isn't supported on this browser or device. Try updating to the latest version.");
 }
+
