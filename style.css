@@ -12,14 +12,12 @@
 
 body {
   background-color: #000;
+  overflow: hidden;
 }
 
 #mirror {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  filter: blur(var(--blur)) brightness(var(--brightness)) contrast(var(--contrast));
+  filter: blur(var(--blur)px) brightness(var(--brightness)) contrast(var(--contrast));
   transform: scaleX(-1);
 }
