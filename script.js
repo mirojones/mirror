@@ -12,3 +12,6 @@ if (navigator.mediaDevices.getUserMedia) {
   alert("Sorry, Mirror isn't supported on this browser or device. Try updating to the latest version.");
 }
 
+function filters(sliderEl, filter) {
+  document.documentElement.style.setProperty(`--${filter}`, sliderEl.value);
+}
